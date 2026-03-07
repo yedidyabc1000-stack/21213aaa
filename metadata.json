@@ -1,0 +1,5 @@
+{
+  "name": "AirBat 4.4",
+  "description": "A nostalgic Android 4.4 Holo-themed monitor for Apple AirPods battery status using Bluetooth APIs.",
+  "requestFramePermissions": ["bluetooth"]
+}

@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-holo-blue: #33b5e5;
+  --color-holo-dark: #000000;
+  --color-holo-gray: #333333;
+  --color-holo-light-gray: #888888;
+  --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-holo-dark text-white font-roboto selection:bg-holo-blue/30;
+  }
+}
+
+/* Android 4.4 Holo Button Style */
+.holo-button {
+  @apply relative px-4 py-2 border border-holo-gray bg-transparent text-white uppercase text-sm font-bold transition-all active:bg-holo-blue/20 active:border-holo-blue;
+}
+
+.holo-divider {
+  @apply h-[1px] bg-holo-blue w-full my-2 opacity-50;
+}
+
+.holo-card {
+  @apply border border-holo-gray bg-holo-dark p-4 rounded-none;
+}
+
+.holo-text-blue {
+  @apply text-holo-blue;
+}
+
+.holo-header {
+  @apply text-holo-blue text-xl font-light uppercase tracking-wider mb-4;
+}
